@@ -29,7 +29,6 @@ ComplexShape::~ComplexShape() {
 
 bool ComplexShape::in(int x, int y)
 {
-    cout<<"sdsdssd";
     if(circle.in(x,y)&&rectangle.in(x,y))
     {
         cout<<"ComplexShape in true"<<endl;
