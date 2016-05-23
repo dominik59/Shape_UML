@@ -23,6 +23,13 @@ Circle::~Circle() {
 }
 Circle::in(int x, int y)
 {
-    
+    if(sqrt(pow(x-this->x_pos)+pow(y-this->y_pos))<=this->r)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
