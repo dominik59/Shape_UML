@@ -12,7 +12,7 @@
  */
 
 #include <cstdlib>
-
+#include <iostream>
 #include "ComplexShape.h"
 
 using namespace std;
@@ -23,6 +23,7 @@ using namespace std;
 int main(int argc, char** argv) {
     ComplexShape cs;
     cs.in(1,1);
+    system("pause");
     return 0;
 }
 
