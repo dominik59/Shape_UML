@@ -16,7 +16,7 @@
 
 class ComplexShape : public Shape{
 public:
-    ComplexShape();
+    ComplexShape(int x, int y);
     ComplexShape(const ComplexShape& orig);
     virtual ~ComplexShape();
     virtual bool in(int x, int y);
