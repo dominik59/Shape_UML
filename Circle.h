@@ -19,11 +19,12 @@ public:
     Circle(int x_pos,int y_pos, int r);
     Circle(const Circle& orig);
     virtual ~Circle();
+    virtual bool in(int x, int y);
 private:
     
 protected:
     int r;      
-    virtual bool in(int x, int y);
+    
 
 
 };

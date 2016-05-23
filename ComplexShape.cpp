@@ -24,3 +24,15 @@ ComplexShape::ComplexShape() {
 ComplexShape::~ComplexShape() {
 }
 
+ComplexShape::in(int x, int y)
+{
+    if(circle.in(1,1)&&rectangle.in(1,1))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+

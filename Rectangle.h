@@ -20,12 +20,13 @@ public:
     Rectangle(int x_pos, int y_pos, int width, int height);
     Rectangle(const Rectangle& orig);
     virtual ~Rectangle();
+    virtual bool in(int x, int y);
 private:
     
 protected:
     int width;
     int height;
-    virtual bool in(int x, int y);
+    
 
 };
 

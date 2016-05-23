@@ -19,10 +19,11 @@ public:
     ComplexShape();
     ComplexShape(const ComplexShape& orig);
     virtual ~ComplexShape();
+    virtual bool in(int x, int y);
 private:
     
 protected:
-    virtual bool in(int x, int y);
+   
 
 
 };
