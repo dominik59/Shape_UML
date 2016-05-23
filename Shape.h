@@ -19,12 +19,13 @@ public:
     Shape();
     Shape(const Shape& orig);
     virtual ~Shape();
+    virtual bool in(int x,int y);
 private:
 
 protected:
     int x_pos;
     int y_pos;
-    virtual bool in(int x,int y);
+    
 };
 
 #endif /* SHAPE_H */

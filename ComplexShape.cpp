@@ -14,6 +14,9 @@
 #include "ComplexShape.h"
 #include "Circle.h"
 #include "Rectangle.h"
+#include <iostream>
+
+using namespace std;
 
 Circle circle(0,0,5);
 Rectangle rectangle(0,0,10,10);
@@ -24,14 +27,17 @@ ComplexShape::ComplexShape() {
 ComplexShape::~ComplexShape() {
 }
 
-ComplexShape::in(int x, int y)
+bool ComplexShape::in(int x, int y)
 {
-    if(circle.in(1,1)&&rectangle.in(1,1))
+    cout<<"sdsdssd";
+    if(circle.in(x,y)&&rectangle.in(x,y))
     {
+        cout<<"ComplexShape in true"<<endl;
         return true;
     }
     else
     {
+        cout<<"ComplexShape in false"<<endl;
         return false;
     }
 }

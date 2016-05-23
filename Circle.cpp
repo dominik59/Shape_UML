@@ -21,9 +21,9 @@ Circle::Circle(const Circle& orig) {
 
 Circle::~Circle() {
 }
-Circle::in(int x, int y)
+bool Circle::in(int x, int y)
 {
-    if(sqrt(pow(x-this->x_pos)+pow(y-this->y_pos))<=this->r)
+    if(sqrt(pow(x-this->x_pos,2)+pow(y-this->y_pos,2))<=this->r)
     {
         return true;
     }

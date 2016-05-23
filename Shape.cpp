@@ -10,7 +10,7 @@
  * 
  * Created on 23 maj 2016, 18:35
  */
-
+#include <iostream>
 #include "Shape.h"
 
 Shape::Shape() {
@@ -21,4 +21,8 @@ Shape::Shape(const Shape& orig) {
 
 Shape::~Shape() {
 }
+bool Shape::in(int x, int y) {
+    return true;
+}
+
 

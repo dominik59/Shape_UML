@@ -22,7 +22,7 @@ Rectangle::Rectangle(const Rectangle& orig) {
 Rectangle::~Rectangle() {
 }
 
-Rectangle::in(int x, int y) {
+bool Rectangle::in(int x, int y) {
     if (this->x_pos <= x && this->y_pos <= y && this->width >= x && this->width >= y) {
         return true;
     }
