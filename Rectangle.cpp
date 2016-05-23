@@ -42,3 +42,8 @@ bool Rectangle::in(int x, int y) {
     }
 }
 
+void Rectangle::addVector(int x, int y)
+{
+    this->x_pos+=x;
+    this->y_pos+=y;
+}

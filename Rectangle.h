@@ -20,6 +20,7 @@ public:
     Rectangle(int x_pos, int y_pos, int width, int height);
     Rectangle(const Rectangle& orig);
     virtual ~Rectangle();
+    void addVector(int x, int y);
     virtual bool in(int x, int y);
 private:
     

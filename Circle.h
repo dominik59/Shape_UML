@@ -19,6 +19,7 @@ public:
     Circle(int x_pos,int y_pos, int r);
     Circle(const Circle& orig);
     virtual ~Circle();
+    void addVector(int x, int y);
     virtual bool in(int x, int y);
 private:
     

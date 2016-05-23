@@ -42,3 +42,9 @@ bool Circle::in(int x, int y)
     }
 }
 
+void Circle::addVector(int x, int y)
+{
+    this->x_pos+=x;
+    this->y_pos+=y;
+}
+

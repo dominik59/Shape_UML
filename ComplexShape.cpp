@@ -18,10 +18,13 @@
 
 using namespace std;
 
+
 Circle circle(0,0,5);
 Rectangle rectangle(0,0,10,10);
 
-ComplexShape::ComplexShape() {
+ComplexShape::ComplexShape(int x,int y) {
+    circle.addVector(x,y);
+    rectangle.addVector(x,y);
 }
 
 ComplexShape::~ComplexShape() {
