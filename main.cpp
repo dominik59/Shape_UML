@@ -21,7 +21,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
-    ComplexShape cs(0,0);
+    ComplexShape cs(2,2);
     cs.in(1,1);
     system("pause");
     return 0;

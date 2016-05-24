@@ -20,11 +20,13 @@ public:
     ComplexShape(const ComplexShape& orig);
     virtual ~ComplexShape();
     virtual bool in(int x, int y);
+    void addVector(int x, int y);
     
 private:
     
 protected:
-   
+    int x;
+    int y;
 
 
 };
