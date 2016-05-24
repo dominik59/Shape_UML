@@ -20,6 +20,7 @@ public:
     Shape(const Shape& orig);
     virtual ~Shape();
     virtual bool in(int x,int y);
+    virtual bool diff(int x, int y);
 private:
 
 protected:

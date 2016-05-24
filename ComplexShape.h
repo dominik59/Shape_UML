@@ -16,10 +16,11 @@
 
 class ComplexShape : public Shape{
 public:
-    ComplexShape(int x, int y);
-    ComplexShape(const ComplexShape& orig);
+    ComplexShape(int x, int y);   
+    ComplexShape(int x, int y, ComplexShape cs);
     virtual ~ComplexShape();
     virtual bool in(int x, int y);
+    virtual bool diff(int x, int y);
     void addVector(int x, int y);
     
 private:
@@ -27,6 +28,7 @@ private:
 protected:
     int x;
     int y;
+    int il_figur;
 
 
 };

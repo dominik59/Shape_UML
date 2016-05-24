@@ -16,13 +16,14 @@
 #include "ComplexShape.h"
 
 using namespace std;
-
 /*
  * 
  */
 int main(int argc, char** argv) {
-    ComplexShape cs(2,2);
+    ComplexShape cs(0,0);
     cs.in(1,1);
+    ComplexShape cs1(2,2,cs);
+    cs1.in(2,2);
     system("pause");
     return 0;
 }

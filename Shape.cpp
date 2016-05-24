@@ -21,7 +21,12 @@ Shape::Shape(const Shape& orig) {
 
 Shape::~Shape() {
 }
+
 bool Shape::in(int x, int y) {
+    return true;
+}
+
+bool Shape::diff(int x, int y) {
     return true;
 }
 
