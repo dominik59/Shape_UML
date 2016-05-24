@@ -22,7 +22,6 @@ public:
     virtual ~Rectangle();
     void addVector(int x, int y);
     virtual bool in(int x, int y);
-    virtual bool diff(int x, int y);
 private:
     
 protected:

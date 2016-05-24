@@ -22,7 +22,7 @@ using namespace std;
 Circle circle(0, 0, 5);
 Rectangle rectangle(0, 0, 10, 10);
 Rectangle rectangle1(0, 0, 10, 10);
-ComplexShape cs1(0,0);
+ComplexShape cs1(0, 0);
 
 ComplexShape::ComplexShape(int x, int y) {
     this->x = x;
@@ -45,9 +45,26 @@ ComplexShape::ComplexShape(int x, int y, ComplexShape cs) {
 ComplexShape::~ComplexShape() {
 }
 
-bool ComplexShape::diff(int x, int y)
-{
-    
+bool ComplexShape::diff(int x, int y) {
+    if (il_figur == 2) {
+        if (circle.in(x, y) && !rectangle.in(x, y) || !circle.in(x, y) && !rectangle.in(x, y)) {
+            cout << "ComplexShape diff true" << endl;
+            return true;
+        } else {
+            cout << "ComplexShape diff false" << endl;
+            return false;
+        }
+    } else if (il_figur == 3) {
+        if (circle.in(x, y) && !rectangle.in(x, y) && !rectangle1.in(x, y) && !cs1.in(x, y) || !circle.in(x, y) && rectangle.in(x, y) && !rectangle1.in(x, y) && !cs1.in(x, y) || !circle.in(x, y) && !rectangle.in(x, y) && rectangle1.in(x, y) && !cs1.in(x, y) || !circle.in(x, y) && !rectangle.in(x, y) && !rectangle1.in(x, y) && cs1.in(x, y)) {
+            cout << "ComplexShape diff true" << endl;
+            return true;
+        }
+        else
+        {
+            cout << "ComplexShape diff false" << endl;
+            return false;
+        }
+    }
 }
 
 bool ComplexShape::in(int x, int y) {
