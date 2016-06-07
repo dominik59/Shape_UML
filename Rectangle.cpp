@@ -50,7 +50,7 @@ void Rectangle::addVector(int x, int y)
 
 bool Rectangle::onEdge(int x, int y)
 {
-    if(x>=x_pos&&x<=width&&y>=y_pos&&y<=height)
+    if(x>=x_pos&&x<=width+x_pos&&y>=y_pos&&y<=height+y_pos)
     {
         return true;
     }

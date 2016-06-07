@@ -21,6 +21,8 @@ public:
     virtual ~Shape();
     virtual bool in(int x,int y);
     virtual bool diff(int x, int y);
+    virtual void addVector(int x, int y);
+    virtual bool onEdge(int x, int y);
 private:
 
 protected:

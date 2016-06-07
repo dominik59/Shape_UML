@@ -22,6 +22,9 @@ public:
     virtual bool in(int x, int y);
     virtual bool diff(int x, int y);
     void addVector(int x, int y);
+    void addElement(int x,int y, int width, int height);
+    void addElement(int x,int y, int r);
+    void addElement(ComplexShape cs, int x,int y);
     void paint_sum();
     void paint_diff();
 private:

@@ -20,7 +20,7 @@ public:
     Circle(const Circle& orig);
     virtual ~Circle();
     void addVector(int x, int y);
-    virtual bool in(int x, int y);    
+    bool in(int x, int y);    
     bool onEdge(int x, int y);
 private:
     

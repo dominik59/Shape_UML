@@ -21,11 +21,15 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     ComplexShape cs(0,0);
-    cs.diff(1,1);
-    ComplexShape cs1(2,2,cs);
-    cs1.diff(2,2);
-    cs1.paint_sum();
-    cs1.paint_diff();
+    cs.addElement(1,0,10,10);
+    cs.addElement(10,10,5);
+    cs.addElement(15,15,5);
+    cs.in(1,1);
+    cs.paint_sum();
+//    ComplexShape cs1(2,2,cs);
+//    cs1.diff(2,2);
+//    cs1.paint_sum();
+//    cs1.paint_diff();
     system("pause");
     return 0;
 }
