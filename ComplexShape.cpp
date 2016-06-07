@@ -227,7 +227,7 @@ void ComplexShape::paint_diff()
                 {
                     contain=true;
                 }
-                else if(i->onEdge(x,y&&contain==true))
+                else if(i->onEdge(x,y)&&contain==true)
                 {
                     contain=false;
                     break;

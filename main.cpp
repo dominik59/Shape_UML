@@ -25,7 +25,10 @@ int main(int argc, char** argv) {
     cs.addElement(10,10,5);
     cs.addElement(15,15,5);
     cs.in(1,1);
+    cs.diff(1,1);
     cs.paint_sum();
+    cs.paint_diff();
+    
 //    ComplexShape cs1(2,2,cs);
 //    cs1.diff(2,2);
 //    cs1.paint_sum();
