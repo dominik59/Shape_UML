@@ -31,7 +31,7 @@ Rectangle::~Rectangle() {
 
 bool Rectangle::in(int x, int y) {
     //cout<<this->x_pos <<this->y_pos << this->width<< this->width <<x<<y;
-    if (this->x_pos <= x && this->y_pos <= y && this->width >= x && this->width >= y) {
+    if (this->x_pos <= x && this->y_pos <= y && this->width >= x && this->height >= y) {
         cout<<"Rectangle in true"<<endl;
         return true;
     }
