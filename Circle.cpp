@@ -48,3 +48,18 @@ void Circle::addVector(int x, int y)
     this->y_pos+=y;
 }
 
+bool Circle::onEdge(int x, int y)
+{
+    for(int alpha=0;alpha<360;alpha++)
+    {
+        int temp_x=this->x_pos+this->r*cos(alpha);
+        int temp_y=this->y_pos+this->r*sin(alpha);
+        if(x==temp_x&&y==temp_y)
+        {
+            return true;
+        }
+        
+    }
+    return false;
+}
+

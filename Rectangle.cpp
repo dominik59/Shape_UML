@@ -47,3 +47,15 @@ void Rectangle::addVector(int x, int y)
     this->x_pos+=x;
     this->y_pos+=y;
 }
+
+bool Rectangle::onEdge(int x, int y)
+{
+    if(x>=x_pos&&x<=width&&y>=y_pos&&y<=height)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}

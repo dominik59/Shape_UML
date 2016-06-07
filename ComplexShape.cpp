@@ -19,7 +19,7 @@
 using namespace std;
 
 
-Circle circle(0, 0, 5);
+Circle circle(5, 5, 5);
 Rectangle rectangle(0, 0, 10, 10);
 Rectangle rectangle1(0, 0, 10, 10);
 ComplexShape cs1(0, 0);
@@ -105,4 +105,64 @@ void ComplexShape::addVector(int x, int y) {
     }
 
 
+}
+
+void ComplexShape::paint_sum()
+{
+    cout<<endl;
+    for(int y=0; y<30;y++)
+    {
+        for(int x=0;x<30;x++)
+        {
+            if(circle.onEdge(x,y)||rectangle.onEdge(x,y))
+            {
+                cout<<"#";
+            }
+            else
+            {
+                cout<<" ";
+            }
+//            if(rectangle.onEdge(x,y)==true)
+//            {
+//                cout<<"#";
+//            }
+//            else
+//            {
+//                cout<<" ";
+//            }           
+        }
+        cout<<endl;
+        
+        
+    }
+}
+
+void ComplexShape::paint_diff()
+{
+    cout<<endl;
+    for(int y=0; y<30;y++)
+    {
+        for(int x=0;x<30;x++)
+        {
+            if(circle.onEdge(x,y)&&rectangle.onEdge(x,y))
+            {
+                cout<<"#";
+            }
+            else
+            {
+                cout<<" ";
+            }
+//            if(rectangle.onEdge(x,y)==true)
+//            {
+//                cout<<"#";
+//            }
+//            else
+//            {
+//                cout<<" ";
+//            }           
+        }
+        cout<<endl;
+        
+        
+    }
 }

@@ -24,6 +24,8 @@ int main(int argc, char** argv) {
     cs.diff(1,1);
     ComplexShape cs1(2,2,cs);
     cs1.diff(2,2);
+    cs1.paint_sum();
+    cs1.paint_diff();
     system("pause");
     return 0;
 }
